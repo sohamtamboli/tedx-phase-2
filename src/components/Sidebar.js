@@ -49,7 +49,7 @@ const SideMenuItem = styled.a`
 	height: 2rem;
 	justify-content: center;
 
-	font-weight: bold;
+	font-weight: 700;
 	transition: all 0.125s ease-in;
 
 	&:hover {
@@ -84,7 +84,7 @@ const SideBtn = styled.a`
 	color: #fff;
 	text-decoration: none;
 
-	font-weight: bold;
+	font-weight: 700;
 	transition: all 0.2s ease-in;
 	justify-content: center;
 `;

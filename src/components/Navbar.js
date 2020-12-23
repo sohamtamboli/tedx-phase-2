@@ -29,6 +29,7 @@ const NavContainer = styled.div`
 const NavLogo = styled.h1`
 	font-size: 2rem;
 	color: #fff;
+	font-weight: 900;
 	cursor: pointer;
 	& span {
 		color: #ff0000;
@@ -56,37 +57,42 @@ const NavMenuItem = styled.a`
 	cursor: pointer;
 	height: 5rem;
 	align-items: center;
-	font-weight: bold;
+	font-weight: 700;
 	transition: all 0.125s ease-in;
 
 	&:hover {
 		color: #ff0000;
-		border-bottom: 3px solid #ff0000;
+		border-bottom: 5px solid #ff0000;
 	}
 
 	&.active {
-		border-bottom: 3px solid #ff0000;
+		border-bottom: 5px solid #ff0000;
 	}
 `;
 
 const NavBtnWrapper = styled.div`
 	align-items: center;
-`;
-
-const NavBtn = styled.a`
-	color: #fff;
-	text-decoration: none;
-	padding: 0.6rem 1.5rem;
-	cursor: pointer;
-	font-weight: bold;
 	border-radius: 2rem;
 	background-color: #ff0000;
+	padding: 0.6rem 1.5rem;
+	cursor: pointer;
 	transition: all 0.2s ease-in;
 
 	&:hover {
 		border: 2px solid #ff0000;
 		background-color: transparent;
 	}
+	@media screen and (max-width: 960px) {
+		display: none;
+	}
+`;
+
+const NavBtn = styled.a`
+	color: #fff;
+	text-decoration: none;
+
+	font-weight: 700;
+	border-radius: 2rem;
 
 	@media screen and (max-width: 960px) {
 		display: none;
