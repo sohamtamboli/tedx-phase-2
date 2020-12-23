@@ -4,8 +4,9 @@ import MobileNav from "./images/MobileNav";
 // import { NavLink as Link } from "react-router-dom";
 
 const Nav = styled.nav`
-	background-color: #212121;
+	background: #fff;
 	height: 5rem;
+	margin-top: -5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -28,7 +29,7 @@ const NavContainer = styled.div`
 `;
 const NavLogo = styled.h1`
 	font-size: 2rem;
-	color: #fff;
+	color: #000;
 	font-weight: 900;
 	cursor: pointer;
 	& span {
@@ -51,7 +52,7 @@ const NavMenu = styled.ul`
 
 const NavMenuItem = styled.a`
 	display: flex;
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 	padding: 0 2rem;
 	cursor: pointer;
@@ -77,8 +78,9 @@ const NavBtnWrapper = styled.div`
 	padding: 0.6rem 1.5rem;
 	cursor: pointer;
 	transition: all 0.2s ease-in;
-
+	color: #fff;
 	&:hover {
+		color: #000;
 		border: 2px solid #ff0000;
 		background-color: transparent;
 	}
@@ -88,7 +90,6 @@ const NavBtnWrapper = styled.div`
 `;
 
 const NavBtn = styled.a`
-	color: #fff;
 	text-decoration: none;
 
 	font-weight: 700;

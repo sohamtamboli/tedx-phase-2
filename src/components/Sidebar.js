@@ -3,7 +3,8 @@ import styled from "styled-components";
 import CloseIcon from "./images/CloseIcon";
 
 const SidebarContainer = styled.div`
-	background-color: #191919;
+	/* background-color: #191919; */
+	background-color: #f1f1f1;
 	position: fixed;
 	left: 0;
 	width: 100%;
@@ -42,7 +43,7 @@ const SideMenu = styled.ul`
 
 const SideMenuItem = styled.a`
 	display: flex;
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 	padding: 2rem 0;
 	cursor: pointer;
@@ -74,14 +75,15 @@ const SideBtnWrapper = styled.div`
 	text-align: center;
 	transition: all 0.2s ease-in;
 	cursor: pointer;
+	color: #fff;
 	&:hover {
+		color: #000;
 		border: 2px solid #ff0000;
 		background-color: transparent;
 	}
 `;
 
 const SideBtn = styled.a`
-	color: #fff;
 	text-decoration: none;
 
 	font-weight: 700;
