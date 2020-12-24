@@ -5,11 +5,15 @@ import img from "./images/herobg.png";
 const HeroMainContainer = styled.main`
 	min-height: 100vh;
 	width: 100%;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+	background-image: linear-gradient(
+			rgba(255, 255, 255, 0.8),
+			rgba(255, 255, 255, 0.8)
+		),
 		url(${img});
-
+	background-position: top center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	display: flex;
 	z-index: 2;
 `;
@@ -28,7 +32,8 @@ const HeroTextWrapper = styled.div`
 	flex: 0.85;
 	justify-content: center;
 	flex-direction: column;
-	color: #fff;
+	color: #000;
+	pointer-events: none;
 	font-size: 30px; //Important
 
 	@media screen and (max-width: 960px) {
@@ -45,7 +50,7 @@ const HeroTextWrapper = styled.div`
 const HeroTopLine = styled.h5`
 	justify-content: flex-start;
 	text-align: left;
-	font-weight: 300;
+	font-weight: 500;
 	font-size: 0.5em;
 	& span {
 		color: #ff0000;
@@ -64,12 +69,19 @@ const HeroHeading = styled.h1`
 	font-weight: 900;
 	font-size: 5em;
 	letter-spacing: 5px;
+	background-image: linear-gradient(45deg, #f12711, #f5af19, #f37335, #f5af19);
+	background-size: 100%;
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 `;
 
 const HeroSubheading = styled.h3`
 	justify-content: right;
 	text-align: right;
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 1.2px;
 	font-size: 0.8em;
 	& span {
@@ -92,7 +104,7 @@ const slideDown = keyframes`
 
 const HeroActionBtnWrapper = styled.div`
 	text-decoration: none;
-	border: 2px solid #fff;
+	border: 2px solid #000;
 	border-radius: 20px;
 	position: relative;
 	width: 1.3rem;
@@ -104,7 +116,7 @@ const HeroActionBtnWrapper = styled.div`
 		position: absolute;
 		height: 4px;
 		width: 4px;
-		background-color: #fff;
+		background-color: #000;
 		border-radius: 50%;
 		left: 50%;
 		top: 10px;
@@ -125,9 +137,7 @@ function HeroSection() {
 						JNEC 2K21 Theme:
 					</HeroTopLine>
 					<HeroHeading>KINTSUGI</HeroHeading>
-					<HeroSubheading>
-						Finding Strength in <span> Imperfection </span>{" "}
-					</HeroSubheading>
+					<HeroSubheading>Finding Strength in Imperfection</HeroSubheading>
 				</HeroTextWrapper>
 				<HeroActionBtnWrapper></HeroActionBtnWrapper>
 			</HeroContentWrapper>

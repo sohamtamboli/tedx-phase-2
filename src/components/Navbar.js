@@ -84,16 +84,21 @@ const NavBtnWrapper = styled.div`
 		border: 2px solid #ff0000;
 		background-color: transparent;
 	}
+	&:hover a {
+		color: #000;
+	}
 	@media screen and (max-width: 960px) {
 		display: none;
 	}
 `;
-
 const NavBtn = styled.a`
 	text-decoration: none;
-
+	color: #fff;
 	font-weight: 700;
 	border-radius: 2rem;
+	&:hover {
+		color: #000;
+	}
 
 	@media screen and (max-width: 960px) {
 		display: none;
@@ -131,7 +136,9 @@ function Navbar({ toggle }) {
 						<NavMenuItem activeStyles>Team</NavMenuItem>
 					</NavMenu>
 					<NavBtnWrapper>
-						<NavBtn>Join Us</NavBtn>
+						<NavBtn href='https://forms.gle/cfmdu92iHQeSyXBR6' target='_blank'>
+							Join Us
+						</NavBtn>
 					</NavBtnWrapper>
 				</NavContainer>
 			</Nav>

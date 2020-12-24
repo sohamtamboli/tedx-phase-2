@@ -19,11 +19,11 @@ const IconWrapper = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	padding: 2rem;
-	margin-right: 2rem;
+	margin-right: 1.5rem;
 	cursor: pointer;
 
 	@media screen and (max-width: 500) {
-		margin-right: 1.8rem;
+		margin-right: 1.2rem;
 	}
 `;
 
@@ -81,14 +81,20 @@ const SideBtnWrapper = styled.div`
 		border: 2px solid #ff0000;
 		background-color: transparent;
 	}
+	&:hover a {
+		color: #000;
+	}
 `;
 
 const SideBtn = styled.a`
 	text-decoration: none;
-
+	color: #fff;
 	font-weight: 700;
 	transition: all 0.2s ease-in;
 	justify-content: center;
+	&:hover {
+		color: #000;
+	}
 `;
 
 function Sidebar({ open, toggle }) {
@@ -111,7 +117,9 @@ function Sidebar({ open, toggle }) {
 						</SideMenuItem>
 					</SideMenu>
 					<SideBtnWrapper>
-						<SideBtn>Join Us</SideBtn>
+						<SideBtn href='https://forms.gle/cfmdu92iHQeSyXBR6' target='_blank'>
+							Join Us
+						</SideBtn>
 					</SideBtnWrapper>
 				</ItemsContainer>
 			</SidebarContainer>
